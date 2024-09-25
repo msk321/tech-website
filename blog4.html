@@ -56,23 +56,25 @@
     <div class="container">
         <h1 class="headline headline-1">Reinforcement Learning in Self-Driving Cars</h1>
 
-    <h1>Reinforcement Learning in Self-Driving Cars</h1>
+ 
 
     <h2>Introduction</h2>
     <p>Imagine a world where cars can drive themselves, safely maneuvering through city streets, highways, and even busy intersections—all without any input from a human. It’s not sci-fi. It’s the rapidly emerging reality of self-driving cars. But what is it that powers those driving machines? At their core, self-driving cars are designed using a sophisticated form of artificial intelligence (AI) known as reinforcement learning—a technique that allows the AI within a car to learn how to drive just as you and I do: through repeated practice and feedback from failures.</p>
     <p>When you learn to drive a car, you get on the road and practice—correcting errors and fine-tuning your skills until your driving becomes second nature. In much the same way, an AI in a self-driving vehicle can also learn by trial and error—performing actions repeatedly in a dynamic world, receiving rewards for successes (i.e., staying on the road) or penalties for failures (i.e., running off the road). An AI in a car learns not to repeat mistakes because if an action leads to an undesirable outcome it receives fewer rewards or more penalties.</p>
     <p>In this blog post we’re going to look at how reinforcement learning will shape our future when it comes to self-driving cars—what we’re doing specifically at Waymo technologically speaking, what challenges we face along the way in developing these kinds of AIs, and how close we may be from living in a world where everyone drives alongside robots!</p>
-
+    <img src="./assets/images/dallerobot.webp" alt="reinforcement learning image by dalle" class="img-holder">
     <h2>What is Reinforcement Learning?</h2>
+         <img src="./assets/images/dallerobot.webp" alt="reinforcement learning image by dalle" class="img-holder">
     <p>At its most basic, reinforcement learning (RL) is a way for machines to learn from experience. Picture yourself teaching a child to ride a bike. When they pedal and balance correctly, they experience the joy of forward motion—that’s positive reinforcement. When they fall or veer off course, they know something went wrong—that’s negative reinforcement. With time and practice, the child learns how to balance better by doing, failing, and discovering different outcomes. Reinforcement learning does essentially this same process—but it uses a computer program (an agent) instead of a child, and self-driving car on-roads as an environment instead of a bicycle path.</p>
     <p>In RL, the car interacts with its environment: roads, traffic lights, other cars. Every action the car makes (speeding up, slowing down, turning) leads to a reward (positive or negative). The car gets rewards for “good” actions (for example, remaining in its lane) and penalties for “bad” ones (getting too close to another vehicle).</p>
-
+    
     <h2>How Reinforcement Learning is Applied in Self-Driving Cars</h2>
     <p>Reinforcement learning (RL) plays a crucial role in helping self-driving cars make decisions in real time. When a car is on the road, it constantly faces choices: Should it speed up to pass a slower vehicle, slow down to avoid an obstacle, or change lanes? These decisions need to happen quickly and accurately. In RL, the car learns how to make these choices by running thousands of simulations in which it experiences different driving conditions, such as heavy traffic, poor weather, or construction zones.</p>
     <p>One of the most popular models used in this learning process is the Deep Q-Network (DQN). This model helps the car understand complex driving environments by learning which actions lead to the best long-term outcomes. For instance, in a simulation, the car might learn that staying behind the car might learn that staying behind a slow vehicle might be safer in certain conditions, even though overtaking could save time. Through trial and error, the car starts to “remember” which decisions result in the safest and most efficient driving behaviors.</p>
     <p>Self-driving car companies like Waymo and Tesla use simulators — virtual driving environments — to train their vehicles safely. These simulators allow cars to face millions of possible driving scenarios without risking real-world accidents. Just as pilots practice in flight simulators, self-driving cars “practice” driving in these controlled environments. Once they perform well in simulation, they’re ready to be tested on actual roads.</p>
-
+    
     <h2>Comprehending Deep Q-Networks (DQN) within the Context of Self-Driving Cars</h2>
+         <img src="./assets/images/dallerobot.webp" alt="reinforcement learning image by dalle" class="img-holder">
     <p>A Deep Q-Network (DQN) combines traditional Q-learning with deep neural networks to help self-driving cars handle real-world driving conditions. In traditional Q-learning, an agent (the car) uses an action-reward table to decide its next move. However, real-world driving is too complex for a simple table, as there are far too many possible scenarios. This is where deep learning becomes essential.</p>
     <p>With DQN, the car doesn't have to store every possible action and outcome. Instead, it uses a neural network to predict Q-values (the expected reward for each action) based on raw input data from its sensors. This data could include camera images, LIDAR signals, and other environmental data. The neural network processes this information through layers of neurons that help the car recognize important features like stop signs, lane markings, or other vehicles. Based on this, the car can predict the best action to take in a given situation.</p>
     <p>DQNs allow self-driving cars to make more informed decisions in complex environments and improve over time by learning from past mistakes. The ability to handle high-dimensional data and make predictions on the fly is what makes DQNs so powerful in autonomous driving systems.</p>
@@ -88,23 +90,28 @@
     <p>Real-time decision making has also been earmarked for further research. As computational power continues to increase, cars will be able to process sensor data and drive using that data in near real-time, even within milliseconds, improving safety and responsiveness in rapidly changing situations.</p>
 
     <div class="footer">
-        <p>
-            I have written this article on Medium as well, the link is below: <br>
-            <a href="https://medium.com/@akshaysg03/hawkeye-uncovered-exploring-the-depths-of-crickets-precision-technology-58c4c0bd21ad">
-              https://medium.com/@akshaysg03/hawkeye-uncovered-exploring-the-depths-of-crickets-precision-technology-58c4c0bd21ad
-            </a>
-        </p>
+        
         <p>
             Written By: Akshay Srinivas
         </p>
         <p>
             Bibliography: <br>
-            <a href="https://www.keyboardspecialists.co.uk/blogs/articles/the-use-of-hawk-eye-technology-in-the-cricket-world-cup#:~:text=Hawk%2DEye%20Technology%20in%20Cricket&text=Designed%20to%20trace%20the%20ball's,its%20incredible%20precision%20and%20movement.">
-              1. https://www.keyboardspecialists.co.uk/blogs/articles/the-use-of-hawk-eye-technology-in-the-cricket-world-cup
+            <a href="https://techvidvan.com/tutorials/reinforcement-learning/">
+              1. https://techvidvan.com/tutorials/reinforcement-learning/
             </a> <br>
-            <a href="https://www.sciencedirect.com/science/article/pii/S1110016823003368">
-              2. https://www.sciencedirect.com/science/article/pii/S1110016823003368
+            <a href="https://www.geeksforgeeks.org/what-is-reinforcement-learning/#:~:text=Reinforcement%20Learning%20(RL)%20is%20a%20branch">
+              2. https://www.geeksforgeeks.org/what-is-reinforcement-learning/#:~:text=Reinforcement%20Learning%20(RL)%20is%20a%20branch
             </a>
+            <a href="https://www.bing.com/search?pglt=41&q=renciforcmeennt+leanring&cvid=a8f57e987e4e4a7992761d4c515bd4b8&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM0MDBqMGoxqAIAsAIA&FORM=ANNTA1&PC=U531">
+              3. https://www.bing.com/search?pglt=41&q=renciforcmeennt+leanring&cvid=a8f57e987e4e4a7992761d4c515bd4b8&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM0MDBqMGoxqAIAsAIA&FORM=ANNTA1&PC=U531
+            </a>
+             <a href="https://www.technologyreview.com/2022/05/27/1052826/ai-reinforcement-learning-self-driving-cars-autonomous-vehicles-wayve-waabi-cruise/#:~:text=Startup%20Waabi%20is%20betting%20everything%20on%20a">
+              4. https://www.technologyreview.com/2022/05/27/1052826/ai-reinforcement-learning-self-driving-cars-autonomous-vehicles-wayve-waabi-cruise/#:~:text=Startup%20Waabi%20is%20betting%20everything%20on%20a
+            </a>
+             <a href="https://www.nature.com/articles/s41586-023-05732-2#:~:text=From%20naturalistic%20driving%20data,%20the">
+              5. https://www.nature.com/articles/s41586-023-05732-2#:~:text=From%20naturalistic%20driving%20data,%20the
+            </a>
+            
         </p>
         <p>
             <a href="index.html" class="class"><strong>Back to Homepage</strong></a>
